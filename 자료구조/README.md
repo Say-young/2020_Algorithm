@@ -1,4 +1,4 @@
-### 자료구조 Programming Report
+## 자료구조 Programming Report
 
 #### PR1
 * 연결리스트로 다항식 프로그램 설계하기

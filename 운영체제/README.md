@@ -1,4 +1,4 @@
-### 운영체제 Programming Report
+## 운영체제 수업 과제
 
 #### PR1
 * Clock Algorithm Simulation

@@ -1,4 +1,4 @@
-### 컴퓨터 알고리즘 Programming Report
+## 컴퓨터 알고리즘 Programming Report
 
 #### PR1
 * Dijkstra의 알고리즘을 이용해 모든 쌍의 최단 경로 구하기
