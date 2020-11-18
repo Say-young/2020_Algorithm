@@ -31,8 +31,11 @@
             }
         ?>
 
-        <div class="title">Group by Continent</div>
-        <div class="continent_rank">
+        <div class="big-title">Finding the country that people want to visit the most</div>
+        <div class="semi-title">--> Find the ranking by using "Rank (Advanced SQL 4)"</div>
+
+        <div class="title">1. Group by Continent</div>
+        <div class="continent_rank"> <div class="tiny-hard-to-naming">Ranking</div>
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -42,7 +45,7 @@
                 }else{
                     $sql = "
                         SELECT (1 + (select count(*) from wish_rank_by_continent B where B.visitors > A.visitors)) as ranking
-                        FROM wish_rank_by_continent A ORDER BY ranking;";
+                        FROM wish_rank_by_continent A ORDER BY ranking";
                     $res = mysqli_query($mysqli, $sql);
 
                     /*
@@ -64,7 +67,7 @@
                 }
             ?>
         </div>
-        <div class="continent_name">
+        <div class="continent_name"> <div class="tiny-hard-to-naming">Continent Name</div>
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -72,7 +75,7 @@
                     prinf("Connect failed: %s\n", mysqli_connect_error());
                     exit();
                 }else{
-                    $sql = "SELECT country_continent from wish_rank_by_continent order by visitors;";
+                    $sql = "SELECT country_continent from wish_rank_by_continent order by visitors desc";
                     $res = mysqli_query($mysqli, $sql);
 
                     if($res){
@@ -89,7 +92,7 @@
                 }
             ?>
         </div>
-        <div class="continent_visitors">
+        <div class="continent_visitors"> <div class="tiny-hard-to-naming">Num of Voters</div>
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -97,7 +100,7 @@
                     prinf("Connect failed: %s\n", mysqli_connect_error());
                     exit();
                 }else{
-                    $sql = "SELECT visitors from wish_rank_by_continent order by visitors;";
+                    $sql = "SELECT visitors from wish_rank_by_continent order by visitors desc";
                     $res = mysqli_query($mysqli, $sql);
 
                     if($res){
@@ -116,8 +119,8 @@
         </div>
 
         <div class="middle_stroke"></div>
-        <div class="title">Group by Country</div>
-        <div class="country_result">
+        <div class="title">2. Group by Country</div>
+        <div class="country_result"> <div class="hard-to-naming">Rank // Country Name // Num of Voters</div>
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -136,6 +139,7 @@
                     */
 
                     if($res){
+                        echo "<br/>";
                         while($result = mysqli_fetch_array($res,MYSQLI_ASSOC)){
                             $rank = $result['ranking'];
                             $country = $result['country_name'];

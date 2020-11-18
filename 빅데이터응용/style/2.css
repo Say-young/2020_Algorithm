@@ -42,3 +42,267 @@ body{
     text-align: center;
     margin-top: 5%;
 }
+
+.form{
+    margin-top:3%;
+    text-align: center;
+    justify-content: center;
+}
+
+.form .text{
+    padding:1%;
+    margin-left:28%;
+    margin-bottom:3%;
+    border-radius: 20px;
+    background-color:#2f2f2f;
+    width:42%;
+    color:white;
+}
+
+.form .radio{
+    display:flex;
+    justify-content: center;
+    margin-bottom:1%;
+    font-family: eng;
+    font-weight: normal;
+}
+
+.big{
+    margin: 1%;
+    color:white;
+}
+
+input[class="checkbox"] + label {
+	display: inline-block;
+	width: 15px;
+    height: 15px;
+    background-color: #3f3f3f;
+    border-radius: 3px;
+	cursor: pointer;
+}
+
+input[class="checkbox"]:checked + label {
+	background-color:#4AFFE0;
+}
+
+input[class="checkbox"] {
+	display: none;
+}
+
+.country #submit1{
+    display: none;
+    font-family: eng;
+    font-weight: bold;
+    margin:1%;
+    margin-left:48%;
+    cursor: pointer;
+    border:none;
+    background: none;
+    color:white;
+    font-family:eng;
+    font-size:1.5rem;
+}
+
+.country #submit1:focus{
+    outline:none;
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit1:hover{
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit2{
+    display: none;
+    font-family: eng;
+    font-weight: bold;
+    margin:1%;
+    margin-left:48%;
+    cursor: pointer;
+    border:none;
+    background: none;
+    color:white;
+    font-family:eng;
+    font-size:1.5rem;
+}
+
+.country #submit2:focus{
+    outline:none;
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit2:hover{
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit3{
+    display: none;
+    font-family: eng;
+    font-weight: bold;
+    margin:1%;
+    margin-left:48%;
+    cursor: pointer;
+    border:none;
+    background: none;
+    color:white;
+    font-family:eng;
+    font-size:1.5rem;
+}
+
+.country #submit3:focus{
+    outline:none;
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit3:hover{
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit4{
+    display: none;
+    font-family: eng;
+    font-weight: bold;
+    margin:1%;
+    margin-left:48%;
+    cursor: pointer;
+    border:none;
+    background: none;
+    color:white;
+    font-family:eng;
+    font-size:1.5rem;
+}
+
+.country #submit4:focus{
+    outline:none;
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit4:hover{
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit5{
+    display: none;
+    font-family: eng;
+    font-weight: bold;
+    margin:1%;
+    margin-left:48%;
+    cursor: pointer;
+    border:none;
+    background: none;
+    color:white;
+    font-family:eng;
+    font-size:1.5rem;
+}
+
+.country #submit5:focus{
+    outline:none;
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+.country #submit5:hover{
+    color: #4AFFE0;
+    border-bottom: 2px solid #4AFFE0;
+}
+
+select {
+    width: 200px;
+    padding: .8em .5em;
+    margin:1%;
+    margin-left:43%;
+
+    font-family: eng;
+    font-weight: bold;
+
+    background-color: #3f3f3f;
+    color:white;
+    border:none;
+    border-radius: 10px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:focus {
+    outline:none;
+}
+
+.country {
+    display: none;
+}
+
+.title{
+    color:white;
+    margin-top: 5%;
+    margin-left:15%;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: bold;
+}
+
+.continent_name{
+    margin:3% 0;
+    color:#ffffff;
+    text-align: center;
+}
+
+.continent_rank{
+    margin:3% 0;
+    color:#ffffff;
+    text-align: center;
+}
+
+.continent_visitors{
+    margin:3% 0;
+    color:#ffffff;
+    text-align: center;
+}
+
+.country_result{
+    margin:3% 0;
+    color:#ffffff;
+    text-align: left;
+}
+
+.middle_stroke{
+    border-bottom: 2px solid #4AFFE0;
+    width:70%;
+    margin-left:15%;
+}
+
+.big-title{
+    color:white;
+    margin-top: 5%;
+    margin-left:15%;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: bold;
+}
+
+.semi-title{
+    color: #9f9f9f;;
+    margin-left:15%;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: medium;
+}
+
+/*1번 랭킹 부분 소제목*/
+.tiny-hard-to-naming{
+
+}
+
+/*2번 랭킹 분류 글씨 css*/
+.hard-to-naming{
+
+}

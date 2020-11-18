@@ -250,7 +250,7 @@ button:hover{
     border:2px solid white;
     border-radius: 10px;
     width:100px;
-    padding:0.5%;
+    padding:5%;
 }
 
 #btn4:hover{
@@ -296,7 +296,7 @@ button:hover{
 }
 
 .content{
-    margin-top:10%;
+    margin-top:3%;
     color:#4AFFE0;
     text-align:center;
 }
@@ -308,8 +308,8 @@ button:hover{
 }
 
 .fora{
-    margin-top:5%;
-    margin-left:47%;
+    margin-top:3%;
+    margin-left:48.5%;
 }
 
 a{
@@ -342,4 +342,30 @@ a:active {
     color:white;
     background-color: transparent;
     text-decoration: underline;
+}
+
+#yaho{
+    margin:0.5%;
+}
+
+.big-title{
+    color:white;
+    margin-top: 5%;
+    text-align:center;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: bold;
+}
+
+.semi-title{
+    color: #9f9f9f;;
+    text-align:center;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: medium;
+}
+
+/*분류 제목 글씨 css*/
+.hard-to-naming{
+    
 }

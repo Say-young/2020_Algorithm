@@ -37,8 +37,74 @@ body{
     text-align:center;
 }
 
+
 .content{
+    margin-top:10%;
     color:#4AFFE0;
-    text-align: center;
+    text-align:center;
+}
+
+.fora{
+    margin-top:3%;
+    margin-left:48.5%;
+}
+
+a{
+    font-family: eng;
+    font-size:17px;
+    font-weight:bold;
+    text-align:center;
+    width:18%;
+}
+
+.title{
+    color:white;
     margin-top: 5%;
+    margin-left:15%;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: bold;
+}
+
+.semi-title{
+    color: #9f9f9f;;
+    margin-left:15%;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: medium;
+}
+
+a:link {
+    color:white;
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#4AFFE0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color:white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#yaho{
+    margin:0.5%;
+}
+
+.middle_stroke{
+    border-bottom: 2px solid #4AFFE0;
+    width:70%;
+    margin-left:15%;
+    margin-top:3%;
 }

@@ -68,10 +68,12 @@
         </div>
 
         <div class="center">
-            <button id = "btn4" onclick=btn4_click()>All</button>
-            <form action="4.php" id="search-form">
+            <form action="4_readAll.php" id="yaho">
+                <button type="submit" id = "btn4" onclick=btn4_click()>All</button>
+            </form>
+            <form action="4_search.php" method="post" id="search-form">
                 <div class="column">
-                    <input class="search" type="text" placeholder="Search items" />
+                    <input class="search" type="text" name="item_name_search" placeholder="Search items" />
                 </div>
                 <div class="column">
                     <button class="glass" type="submit"><img id ="glass" src="../img/glass.png" alt=""><img id ="glass_mint" src="../img/glass_mint.png" alt=""></button>

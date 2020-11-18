@@ -273,3 +273,30 @@ select:focus {
     width:70%;
     margin-left:15%;
 }
+
+.big-title{
+    color:white;
+    margin-top: 5%;
+    margin-left:15%;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: bold;
+}
+
+.semi-title{
+    color: #9f9f9f;;
+    margin-left:15%;
+    font-size: 17px;
+    font-family: eng;
+    font-weight: medium;
+}
+
+/*1번 랭킹 부분 소제목*/
+.tiny-hard-to-naming{
+
+}
+
+/*2번 랭킹 분류 글씨 css*/
+.hard-to-naming{
+
+}

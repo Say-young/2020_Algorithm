@@ -47,7 +47,7 @@
                                         $insert = mysqli_query($mysqli, $sql4);
 
                                         if($insert === TRUE){
-                                            echo("Your data is inserted Successfully");
+                                            echo("I used Transaction here. Your data is inserted Successfully.");
                                         }else{
                                             //must-have-item insert fail
                                         }
