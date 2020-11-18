@@ -35,7 +35,9 @@
         <div class="semi-title">--> Find the ranking by using "Rank (Advanced SQL 4)"</div>
 
         <div class="title">1. Group by Continent</div>
-        <div class="continent_rank"> <div class="tiny-hard-to-naming">Ranking</div>
+
+        <div class ="container">
+        <div class="inside_container"> <div class="tiny-hard-to-naming">~Ranking~</div>
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -56,7 +58,7 @@
                     if($res){
                         while($result = mysqli_fetch_array($res,MYSQLI_ASSOC)){
                             $rank = $result['ranking'];
-                            echo "".$rank."\n";
+                            echo "".$rank."<br/>";
                         }
                     }else{
                         printf("Could not retrieve records: %s\n", mysqli_error($mysqli));
@@ -67,7 +69,7 @@
                 }
             ?>
         </div>
-        <div class="continent_name"> <div class="tiny-hard-to-naming">Continent Name</div>
+        <div class="inside_container"> <div class="tiny-hard-to-naming">~Continent Name~</div>
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -81,7 +83,7 @@
                     if($res){
                         while($result = mysqli_fetch_array($res,MYSQLI_ASSOC)){
                             $name = $result['country_continent'];
-                            echo "".$name."\n";
+                            echo "".$name."<br/>";
                         }
                     }else{
                         printf("Could not retrieve records: %s\n", mysqli_error($mysqli));
@@ -92,7 +94,7 @@
                 }
             ?>
         </div>
-        <div class="continent_visitors"> <div class="tiny-hard-to-naming">Num of Voters</div>
+        <div class="inside_container"> <div class="tiny-hard-to-naming">~Num of Voters~</div>
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -106,7 +108,7 @@
                     if($res){
                         while($result = mysqli_fetch_array($res,MYSQLI_ASSOC)){
                             $visitors = $result['visitors'];
-                            echo "".$visitors."\n";
+                            echo "".$visitors."<br/>";
                         }
                     }else{
                         printf("Could not retrieve records: %s\n", mysqli_error($mysqli));
@@ -117,6 +119,7 @@
                 }
             ?>
         </div>
+            </div>
 
         <div class="middle_stroke"></div>
         <div class="title">2. Group by Country</div>
@@ -144,8 +147,8 @@
                             $rank = $result['ranking'];
                             $country = $result['country_name'];
                             $visitors = $result['visitors'];
-                            echo "".$rank."\t";
-                            echo "".$country."\t";
+                            echo "".$rank."\t&nbsp//&nbsp\t";
+                            echo "".$country."\t&nbsp//&nbsp\t";
                             echo "".$visitors."<br/>";
                         }
                     }else{

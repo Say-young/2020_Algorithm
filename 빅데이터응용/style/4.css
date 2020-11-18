@@ -365,7 +365,24 @@ a:active {
     font-weight: medium;
 }
 
+.content {
+    color:#4AFFE0;
+    font-size:20px;
+    margin-bottom:-10px;
+    margin-top:-1px;
+}
+
 /*분류 제목 글씨 css*/
 .hard-to-naming{
-    
+    margin-top:1%;
+    text-align:center;
+    font-size:16px;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+    background-color:#3f3f3f;
+    margin-left:19%;
+    margin-bottom:1%;
+    padding : 1%;
+    width:60%;
+    color:white;
 }

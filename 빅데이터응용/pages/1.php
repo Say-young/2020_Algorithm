@@ -16,6 +16,7 @@
         <!--여기에 나라 이름, 나라별(group by) 최근 10년간 총 방문자 수(sum), 1년 평균 방문자 수(avg), 방문 ranking 들어갑니다요-->
         <div class="title">1. Number of Korean Travelers in the Last 10 Years "by Country"</div>
         <div class="semi-title">--> Find the sum total of all visitors by using "RollUp (Advanced SQL 1)"</div>
+        <div class="hard-to-naming">Country Name // Sum of Visitors in last 10 years</div>
         <div class="content">
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
@@ -38,14 +39,14 @@
                                 if($country_idx){
                                     while($newArray = mysqli_fetch_array($result,MYSQLI_ASSOC)){
                                         $country_name = $newArray['country_name'];
-                                        echo("".$country_name."\t".$sum."<br/>");
+                                        echo("".$country_name."\t&nbsp//&nbsp\t".$sum."<br/>");
                                     }
                                 }else{
                                 }
                             }else{
                             }
                         }
-                        echo("NUM OF TOTAL PARTICIPANTS : ".$sum."");
+                        echo("<br/>NUM OF TOTAL PARTICIPANTS : ".$sum."");
                     }else{
                         //sql1쿼리 정상 작동 안함
                     }

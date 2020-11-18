@@ -15,8 +15,8 @@
 
         <div class="big-title">1. Calculate the percentage of all users' votes "by item" and organize them in order of large proportions.</div>
         <div class="semi-title">--> Use division of results, ROUND, GROUP BY, ORDER BY, Nested Query, View etc. (Advanced SQL 5)"</div>
-
-        <div class="content"><div class="hard-to-naming">Item Name // Num of Votes // Total Count // ratio to the total</div>
+        <div class="hard-to-naming">Item Name // Num of Votes // Total Count // ratio to the total</div>
+        <div class="content">
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -33,7 +33,7 @@
                             $num = $newArray['num'];
                             $TOTAL = $newArray['TOTAL'];
                             $RATE = $newArray['RATE'];
-                            echo("".$item_name."\t".$num."\t".$TOTAL."\t".$RATE."%<br/>");
+                            echo("".$item_name."\t&nbsp//&nbsp\t".$num."\t&nbsp//&nbsp\t".$TOTAL."\t&nbsp//&nbsp\t".$RATE."%<br/>");
                         }
                     }else{
                         //sql1쿼리 정상 작동 안함

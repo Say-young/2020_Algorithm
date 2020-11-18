@@ -293,10 +293,41 @@ select:focus {
 
 /*1번 랭킹 부분 소제목*/
 .tiny-hard-to-naming{
+    font-weight:bold;
+    color:#fdb52f;
 
 }
 
-/*2번 랭킹 분류 글씨 css*/
+.country_result {
+    color:#4AFFE0;
+    margin-left:40%;
+    font-size:20px;
+}
+
+/*분류 제목 글씨 css*/
 .hard-to-naming{
+    margin-top:3%;
+    text-align:center;
+    font-size:16px;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+    background-color:#3f3f3f;
+    margin-left:-15%;
+    margin-bottom:1%;
+    padding : 1%;
+    width:60%;
+    color:white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.inside_container{
+    text-align:center;
+    margin:3%;
+    font-size: 18px;
+    color:white;
 
 }

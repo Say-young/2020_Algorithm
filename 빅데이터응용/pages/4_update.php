@@ -21,33 +21,42 @@
                     prinf("Connect failed: %s\n", mysqli_connect_error());
                     exit();
                 }else{
-                    $sql1 = "SELECT * FROM user WHERE user_name = '".$_POST['user_name']."' and user_password = '".$_POST['user_password']."'";
-                    $res = mysqli_query($mysqli, $sql1);
+                    try{
+                        $mysqli -> autocommit(FALSE);
 
-                    if($res){
-                        $num = mysqli_num_rows($res);
-                        if($num == 1){
-                            //계정 존재 - user_idx 반환
-                            while($newArray = mysqli_fetch_array($res,MYSQLI_ASSOC)){
-                                $idx = $newArray['user_idx'];
+                        $sql1 = "SELECT * FROM user WHERE user_name = '".$_POST['user_name']."' and user_password = '".$_POST['user_password']."'";
+                        $res = mysqli_query($mysqli, $sql1);
 
-                                $sql2 = "UPDATE `must_have_items` SET item_name = '".$_POST['user_item']."' WHERE user_idx = '".$idx."'";
-                                $update = mysqli_query($mysqli, $sql2);
-
-                                if($update === TRUE){
-                                    echo("Your data is updated successfully.");
-                                }else{
-                                    //업데이트 실패
+                        if($res){
+                            $num = mysqli_num_rows($res);
+                            if($num == 1){
+                                //계정 존재 - user_idx 반환
+                                while($newArray = mysqli_fetch_array($res,MYSQLI_ASSOC)){
+                                    $idx = $newArray['user_idx'];
+    
+                                    $sql2 = "UPDATE `must_have_items` SET item_name = '".$_POST['user_item']."' WHERE user_idx = '".$idx."'";
+                                    $update = mysqli_query($mysqli, $sql2);
+    
+                                    if($update === TRUE){
+                                        echo("I used Transaction here. Your data is updated successfully.");
+                                    }else{
+                                        //업데이트 실패
+                                    }
+                                    $mysqli -> commit();
+                                    $mysqli -> autocommit(TRUE);
                                 }
+                            }else{
+                                //계정 정보 존재하지 않음.
+                                echo("I used Transaction here. This Account does not exist.");
                             }
                         }else{
-                            //계정 정보 존재하지 않음.
-                            echo("This Account does not exist.");
+                            //sql1쿼리 정상 작동 안함
                         }
-                    }else{
-                        //sql1쿼리 정상 작동 안함
+                    }catch(Exception $e){
+                        $mysqli -> rollback();
+                        $mysql -> autocommit(TRUE);
                     }
-                    //
+
                     mysqli_close($mysqli);
                 }
             ?>

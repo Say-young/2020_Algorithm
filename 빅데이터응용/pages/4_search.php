@@ -13,7 +13,8 @@
             <div class="intro">What are the must-have items for traveling?</div>
         </header>
 
-        <div class="title"><div class="hard-to-naming">item name // num of voters</div>
+        <div class="hard-to-naming">item name // num of voters</div>
+        <div class="content">
             <?php
                 $mysqli = mysqli_connect("localhost", "team16", "team16", "team16");
 
@@ -43,7 +44,7 @@
 
                             }
                         }
-                        echo("".$item_name."\t".$count."<br/>");
+                        echo("".$item_name."\t&nbsp//&nbsp\t".$count."<br/>");
                     }else{
                         //sql1쿼리 정상 작동 안함
                     }
