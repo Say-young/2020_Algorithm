@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "eng";
+    src:url('font/applegothic-bold.ttf') format('truetype');
+    src:url('font/applegothic-light.ttf') format('truetype');
+    src:url('font/applegothic-medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: eng;
+    margin:0;
+    background-color:#1f1f1f;
+}
+
+.header{
+    margin-top:5%;
+    display:block;
+    width:100%;
+}
+
+#header{
+    margin-left:45%;
+    width:10%;
+}
+
+.header .stroke{
+    border-bottom: 2px solid #4AFFE0;
+    width:44%;
+    margin-left:28%;
+}
+
+.header .intro{
+    font-style:italic;
+    color:#4AFFE0;
+    margin-top:5px;
+    text-align:center;
+}
+
+.content{
+    color:#4AFFE0;
+    text-align: center;
+    margin-top: 5%;
+}

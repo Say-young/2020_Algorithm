@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "eng";
+    src:url('font/applegothic-bold.ttf') format('truetype');
+    src:url('font/applegothic-light.ttf') format('truetype');
+    src:url('font/applegothic-medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: eng;
+    margin:0;
+    background-color:#1f1f1f;
+}
+
+.a{
+    margin-left:10%;
+}
+
+a{
+    width:18%;
+}
+
+a:link {
+    color:white;
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color:white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.bottom {
+    position: absolute;
+    top : 600px;
+    left : 400px;
+}
+
+.bottom .caption{
+    font-style: italic;
+    text-align: center;
+    color: #4f4f4f;
+    width: 100%;
+}
+
+.header{
+    position: relative;
+    width:100%;
+    margin-top:15%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .nav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    color:white;
+    z-index : 10;
+}
+
+.header .nav .item .stroke{
+    display : none;
+}
+
+.header .nav .item .icon-white{
+    width:70%;
+    height:40%;
+    margin-left:15%;
+}
+
+.header .nav .item .icon-mint{
+    display: none;
+    width:70%;
+    height:40%;
+    margin-left:15%;
+    cursor: pointer;
+}
+
+.header .nav .mainMenu{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header .nav .item:hover{
+    color: #4AFFE0;
+}
+
+.header .nav .item:hover .mainMenu{
+    margin-top:9.5%;
+}
+
+.header .nav .item:hover .stroke{
+    display: flex;
+    border: solid 2px #4AFFE0;
+}
+
+.header .nav .item:hover .icon-white{
+    display: none;
+}
+
+.header .nav .item:hover .icon-mint{
+    display: flex;
+}
+
+.header .nav .subMenu li{
+    list-style: none;
+    font-size : 15px;
+    font-weight: lighter;
+}
+
+.header .nav .subMenu1{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.header .nav .subMenu2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.header .nav .subMenu3{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.header .nav .subMenu4{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.header .nav .item:hover .subMenu1{
+    display: flex;
+}
+
+.header .nav .item:hover .subMenu2{
+    display: flex;
+}
+
+.header .nav .item:hover .subMenu3{
+    display: flex;
+}
+
+.header .nav .item:hover .subMenu4{
+    display: flex;
+}

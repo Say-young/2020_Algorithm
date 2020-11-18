@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wish-Listed Destinations</title>
+        <link rel="stylesheet" href="../style/3.css">
+    </head>
+    <body>
+        <header class = "header">
+            <img id="header" src = "../img/3_white.png">
+            <div class="stroke"></div>
+            <div class="intro">Wish-Listed Destinations</div>
+            <div class="intro">Where do you want to travel most after end of Pandamic?</div>
+        </header>
+
+            <form class="form">
+                <div class = "text">Choose only one travel destination you would like to travel most after end of the CoronaVirus Pandemic.</div>
+                <div class="radio">
+                    <div class="big">
+                        <input class="checkbox" type="checkbox" id = "1" name="group" value="Asia" onclick="oneCheckbox(this)">
+                        <label for="1"></label> Asia
+                    </div>
+                    <div class="big">
+                        <input class="checkbox" type="checkbox" id = "2" name="group" value="America" onclick="oneCheckbox(this)">
+                        <label for="2"></label> America
+                    </div>
+                    <div class="big">
+                        <input class="checkbox" type="checkbox" id = "3" name="group" value="Europe" onclick="oneCheckbox(this)">
+                        <label for="3"></label> Europe
+                    </div>
+                    <div class="big">
+                        <input class="checkbox" type="checkbox" id = "4" name="group" value="" onclick="oneCheckbox(this)">
+                        <label for="4"></label> Africa
+                    </div>
+                    <div class="big">
+                        <input class="checkbox" type="checkbox" id = "5" name="group" value="" onclick="oneCheckbox(this)">
+                        <label for="5"></label> Oceania
+                    </div>
+                </div>
+            </form>
+
+            <form action="3.php" method="post" class = "country" id="asia">
+                <select name="country">
+                    <option>Asia - Click me</option>
+                    <option value=1>Japan</option>
+                    <option value=2>China</option>
+                    <option value=3>Vietnam</option>
+                    <option value=4>Thailand</option>
+                    <option value=5>Philippines</option>
+                    <option value=6>Hong Kong</option>
+                    <option value=7>Taiwan</option>
+                    <option value=8>Macau</option>
+                    <option value=9>Singapore</option>
+                    <option value=10>Malaysia</option>
+                    <option value=11>Indonesia</option>
+                    <option value=12>Turkey</option>
+                    <option value=13>Mongolia</option>
+                </select>
+                <input type="submit" id="submit1" name="answer" value="OK">
+            </form>
+
+            <form action="3.php" method="post" class = "country" id="europe">
+                <select name="country">
+                    <option>Europe - Click me</option>
+                    <option value=14>Spain</option>
+                    <option value=15>Germany</option>
+                    <option value=16>Austria</option>
+                    <option value=17>U.K</option>
+                    <option value=18>Slovenia</option>
+                    <option value=19>Russia</option>
+                    <option value=20>Macedonia</option>
+                    <option value=21>Serbia</option>
+                </select>
+                <input type="submit" id="submit2" name="answer" value="OK">
+            </form>
+
+            <form action="3.php" method="post" class = "country" id="america">
+                <select name="country">
+                    <option>America - Click me</option>
+                    <option value=22>U.S.A</option>
+                    <option value=23>Canada</option>
+                    <option value=24>Brazil</option>
+                    <option value=25>Dominican Republic</option>
+                    <option value=26>Jamaica</option>
+                    <option value=27>Costa Rica</option>
+                    <option value=28>Mexico</option>
+                </select>
+                <input type="submit" id="submit3" name="answer" value="OK">
+            </form>
+
+            <form action="3.php" method="post" class = "country" id="africa">
+                <select name="country">
+                    <option>Africa - Click me</option>
+                    <option value=29>Republic of South Africa</option>
+                    <option value=30>Mauritius</option>
+                    <option value=31>Kingdom of Eswatini</option>
+                    <option value=32>Seychelles</option>
+                </select>
+                <input type="submit" id="submit4" name="answer" value="OK">
+            </form>
+
+            <form action="3.php" method="post" class = "country" id="oceania">
+                <select name="country">
+                    <option>Oceania - Click me</option>
+                    <option value=33>Australia</option>
+                    <option value=34>Saipan</option>
+                    <option value=35>Guam</option>
+                    <option value=36>New Zealand</option>
+                    <option value=37>Palau</option>
+                    <option value=38>Fiji</option>
+                </select>
+                <input type="submit" id="submit5" name="answer" value="OK">
+            </form>
+
+    </body>
+    <script src="script.js"></script>
+</html>

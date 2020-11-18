@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel Essential Items</title>
+        <link rel="stylesheet" href="../style/4.css">
+    </head>
+    <body>
+        <header class = "header">
+            <img id="header" src = "../img/4_white.png">
+            <div class="stroke"></div>
+            <div class="intro">Travel Essential Items</div>
+            <div class="intro">What are the must-have items for traveling?</div>
+        </header>
+
+        <div class="top-button">
+            <button class="button" id="btn1" onclick=btn1_click()>Insert My Items</button>
+            <button class="button" id="btn2" onclick=btn2_click()>Update My Items</button>
+            <button class="button" id="btn3" onclick=btn3_click()>Delete My Items</button>
+        </div>
+
+        <div id = "center-insert">
+            <form class = "align" action="4_insert.php" method="post" class = "top_update">
+                <div class="column">
+                    Name:  <input class="insert" type="text" name="user_name" placeholder="Your Name" />
+                </div>
+                <div class="column">
+                    PW:  <input class="insert" type="text" name="user_password" placeholder="Password" />
+                </div>
+                <div class="column">
+                    Item:  <input class="insert" type="text" name="user_item" placeholder="your must-have item" />
+                </div>
+                <div class="column">
+                    <input type="submit" id="tiny-button1" value="INSERT"></input>
+                </div>
+            </form>
+        </div>
+
+        <div id = "center-update">
+            <form class = "align" action="4_update.php" method="post" class = "top_update">
+                <div class="column">
+                    Name:  <input class="insert" type="text" name="user_name" placeholder="Your Name" />
+                </div>
+                <div class="column">
+                    PW:  <input class="insert" type="text" name="user_password" placeholder="Password" />
+                </div>
+                <div class="column">
+                    Item:  <input class="insert" type="text" name="user_item" placeholder="update your record" />
+                </div>
+                <div class="column">
+                    <input type="submit" id="tiny-button2" value="UPDATE"></input>
+                </div>
+            </form>
+        </div>
+
+        <div id = "center-delete">
+            <form class = "align" action="4_delete.php" method="post" class = "top_update">
+                <div class="column">
+                    Name:  <input class="insert" type="text" name="user_name" placeholder="Your Name" />
+                </div>
+                <div class="column">
+                    PW:  <input class="insert" type="text" name="user_password" placeholder="Password" />
+                </div>
+                <div class="column">
+                    <input type="submit" id="tiny-button3" value="DELETE"></input>
+                </div>
+            </form>
+        </div>
+
+        <div class="center">
+            <button id = "btn4" onclick=btn4_click()>All</button>
+            <form action="4.php" id="search-form">
+                <div class="column">
+                    <input class="search" type="text" placeholder="Search items" />
+                </div>
+                <div class="column">
+                    <button class="glass" type="submit"><img id ="glass" src="../img/glass.png" alt=""><img id ="glass_mint" src="../img/glass_mint.png" alt=""></button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <script src="script.js"></script>
+</html>
